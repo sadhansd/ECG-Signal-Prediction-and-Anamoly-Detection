@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>ECG SIGNAL PREDICTION</title>
+  </head>
+  <body>
+    <section id="navbar">
+      <div class="left">
+        <img src="images/logo.png" alt="" />
+        <h1>ECG Signal Prediction</h1>
+      </div>
+      <div class="right">
+        <a href="/index30.html" class="active"><p>30 epochs</p></a>
+        <a href="/index20.html" class="other"><p>20 epochs</p></a>
+        <a href="/index15.html" class="other"><p>15 epochs</p></a>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="left">
+        <img src="images/heart.png" alt="" />
+      </div>
+      <div class="right">
+        <div class="graph" id="graph1"></div>
+        <div class="graph" id="graph2"></div>
+      </div>
+    </section>
+
+    <section id="metrics">
+      <div class="val">
+        <div id="mse" style="padding-top: 17px"></div>
+      </div>
+      <div class="val">
+        <div id="mae" style="padding-top: 17px"></div>
+      </div>
+      <div class="val">
+        <div id="rmse" style="padding-top: 17px"></div>
+      </div>
+      <div class="val">
+        <div style="padding-top: 17px" id="R2_score"></div>
+      </div>
+      <div class="val">
+        <div id="MAPE" style="padding-top: 17px"></div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="script30.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</html>
